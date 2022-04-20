@@ -1,0 +1,17 @@
+.naviBar {
+  width: 100%;
+  background: gray;
+  text-align: center;
+  padding: 10px;
+  .naviBtn {
+    height: 30px;
+    margin: 0 5px;
+    padding: 0 10px;
+    border: none;
+    background: skyblue;
+  }
+  .btnSelected {
+    border: 1px solid black;
+    background: pink
+  }
+}
