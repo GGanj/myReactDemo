@@ -27,6 +27,8 @@ import FlavorForm from "../Form/FlavorForm";
 import Reservation from "../Form/Reservation";
 import Calculator from "../LiftingState/Calculator";
 import WelcomeDialog from "../Composition/WelcomeDialog";
+import I18n from "../I18n/i18n";
+import CodeSplite from "../CodeSplite/CodeSplite";
 
 class MainContainer extends React.Component {
   showDetail(selected) {
@@ -74,6 +76,10 @@ class MainContainer extends React.Component {
         return <Calculator />
       case "composition":
         return <WelcomeDialog />
+      case "i18n":
+        return <I18n />
+      case "splite":
+        return <CodeSplite />
       case "hoc":
         const CommentListHoc = hocContainer(CommentList, (DataSource) => DataSource.getComment());
         const BlogpostHoc = hocContainer(BlogPost, (DataSource, id) => DataSource.getBlog(id))

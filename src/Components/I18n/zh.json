@@ -1,0 +1,9 @@
+{
+    "translation": {
+        "key1" : "I18n zh key1",
+        "key2" : {
+            "subKey1" : "I18n zh key2 subKey1"
+        },
+        "null": "Zh String not existed"
+    }
+}

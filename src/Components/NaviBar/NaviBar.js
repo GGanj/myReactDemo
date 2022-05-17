@@ -27,6 +27,8 @@ class NaviBar extends React.Component {
         <button className={"naviBtn" + (this.props.currContent === "form" ? " btnSelected" : "")} value="form">Form</button>
         <button className={"naviBtn" + (this.props.currContent === "liftingState" ? " btnSelected" : "")} value="liftingState">LiftingState</button>
         <button className={"naviBtn" + (this.props.currContent === "composition" ? " btnSelected" : "")} value="composition">Composition</button>
+        <button className={"naviBtn" + (this.props.currContent === "i18n" ? " btnSelected" : "")} value="i18n">I18n</button>
+        <button className={"naviBtn" + (this.props.currContent === "splite" ? " btnSelected" : "")} value="splite">Spliete</button>
         <button className={"naviBtn" + (this.props.currContent === "context" ? " btnSelected" : "")} value="context">Context</button>
         <button className={"naviBtn" + (this.props.currContent === "errorBoundary" ? " btnSelected" : "")} value="errorBoundary">ErrorBoundary</button>
         <button className={"naviBtn" + (this.props.currContent === "ref" ? " btnSelected" : "")} value="ref">Ref</button>

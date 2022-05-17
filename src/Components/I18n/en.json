@@ -1,0 +1,13 @@
+{
+    "translation": {
+        "prefix1": {
+            "key1" : "I18n en prefix1 key1",
+            "key2" : "I18n en prefix1 key2"
+        },
+        "prefix2": {
+            "key1" : "I18n en prefix2 key1",
+            "key2" : "I18n en prefix2 key2"
+        },
+        "null": "En string not existed"
+    }
+}
