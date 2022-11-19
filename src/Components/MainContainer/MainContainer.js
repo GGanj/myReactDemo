@@ -14,7 +14,17 @@ import NumberList from "../List&Key/NumberList";
 import BlogList from "../LifeCycle/BlogList";
 // form
 import NameForm from "../Form/ControledNameForm";
-
+import EssayForm from "../Form/EssayForm";
+import FlavorForm from "../Form/FlavorForm";
+import Reservation from "../Form/Reservation";
+// Lifting State
+import Calculator from "../LiftingState/Calculator";
+// Composition
+import WelcomeDialog from "../Composition/WelcomeDialog";
+// i18next
+import I18n from "../I18n/i18n";
+// Code splite
+import CodeSplite from "../CodeSplite/CodeSplite";
 
 // Hoc
 import CommentList from '../HOC/CommentList';
@@ -22,13 +32,6 @@ import BlogPost from '../HOC/BlogPost';
 import { hocContainer } from '../HOC/HocContainer';
 // Hook
 import UseStateDemo from "../Hook/UseState";
-import EssayForm from "../Form/EssayForm";
-import FlavorForm from "../Form/FlavorForm";
-import Reservation from "../Form/Reservation";
-import Calculator from "../LiftingState/Calculator";
-import WelcomeDialog from "../Composition/WelcomeDialog";
-import I18n from "../I18n/i18n";
-import CodeSplite from "../CodeSplite/CodeSplite";
 
 class MainContainer extends React.Component {
   showDetail(selected) {
@@ -36,9 +39,9 @@ class MainContainer extends React.Component {
       case "init":
         return (
           <>
-            <Welcome title="React 1" />;
-            <Welcome title="React 2" />;
-            <Welcome title="React 3" />;
+            <Welcome title="React 1" />
+            <Welcome title="React 2" />
+            <Welcome title="React 3" />
           </>
         )
       case "lifeCycle":

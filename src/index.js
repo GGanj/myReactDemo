@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom"
+
 import './index.scss';
 import Homepage from './Components/Homepage';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Homepage />
+    <BrowserRouter>
+      <Homepage />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

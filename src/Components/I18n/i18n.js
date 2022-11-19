@@ -6,7 +6,7 @@ import en from "./en.json"
 import zh from "./zh.json"
 
 i18next.init({
-    lng: "zh",
+    lng: "en",
     debug: true,
     resources: {
         en,
@@ -17,6 +17,10 @@ i18next.init({
 });
 
 export default class I18n extends React.Component {
+    constructor(props) {
+        super(props)
+        this.handleLngChange = this.handleLngChange.bind(this);
+    }
     handleLngChange(value) {
         i18next.changeLanguage(value.target.value, (err) => {
             // if(err) {
@@ -25,6 +29,7 @@ export default class I18n extends React.Component {
             //     // this.forceUpdate();
             // }
         })
+        this.forceUpdate();
     }
     render() {
         const enT1 = i18next.getFixedT("en", null, null);
@@ -38,14 +43,18 @@ export default class I18n extends React.Component {
                     <button value="en" onClick={this.handleLngChange}>EN</button>
                     <button value="zh-h" onClick={this.handleLngChange}>ZH</button>
                 </div>
+                enT1<br /> 
                 {enT1("prefix1.key1")}
-                <br />
+                <br /><br />
+                enT2<br />
                 {enT2("key2")}
-                <br />
+                <br /><br />
+                default<br />
                 {i18next.t(['key2.subKey1', 'null'])}
                 <br />
                 {i18next.t("key3", "default value for missing key")}
-                <br />
+                <br /><br />
+                zhT1 <br />
                 {zhT1('key1')}
                 <br />
                 {zhT1(['key2.subKey1', 'null'])}
